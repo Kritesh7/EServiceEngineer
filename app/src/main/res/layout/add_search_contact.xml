@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complaintpopLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#396999"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/filters"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_grey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/customer_name"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <in.co.cfcs.kriteshspinnerserachlib.SearchableSpinner
+                        android:id="@+id/spinner_customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_back"
+                        android:gravity="center_vertical"
+                        android:minHeight="30dp"
+                        android:padding="0dp"
+                        android:popupBackground="#fff"
+                        android:spinnerMode="dropdown"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/plant"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <in.co.cfcs.kriteshspinnerserachlib.SearchableSpinner
+                        android:id="@+id/spinner_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_back"
+                        android:gravity="center_vertical"
+                        android:minHeight="30dp"
+                        android:padding="0dp"
+                        android:popupBackground="#fff"
+                        android:spinnerMode="dropdown"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/approval_status"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner_approval_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_back"
+                        android:gravity="center_vertical"
+                        android:minHeight="30dp"
+                        android:padding="0dp"
+                        android:popupBackground="#fff"
+                        android:spinnerMode="dropdown"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/search_contact_name_mailid"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/txt_name_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_box_enable_disable"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Person Name"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/btn_search_clear"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Find"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:id="@+id/btn_search_find"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

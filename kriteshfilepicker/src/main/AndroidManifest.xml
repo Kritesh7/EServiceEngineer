@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.co.cfcs.kriteshfilepicker" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+        <activity
+            android:name=".FilePickerActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MediaDetailsActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <provider
+            android:name=".utils.FilePickerProvider"
+            android:authorities="${applicationId}.in.co.cfcs.kriteshfilepicker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

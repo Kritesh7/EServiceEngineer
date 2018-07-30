@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">EServiceEngineer</string>
+
+    <string name="customerLogin">Customer Login</string>
+    <string name="userName">User Name</string>
+    <string name="forgotPassword">Forget the password?</string>
+
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of EService Engineer is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\ now</string>
+    <string name="update1">Update</string>
+
+
+    <!-- Complain Detail Activity -->
+    <string name="HintEngg">Select Engineer</string>
+    <string name="ComplainDetail">Complain Detail</string>
+    <string name="complainDate">Complain Date</string>
+    <string name="complainTime">Complain Time</string>
+    <string name="complainNo">Complain No</string>
+    <string name="complainTitle">Complain Title</string>
+    <string name="Priority">Priority</string>
+    <string name="ComplainStatus">Complain Status</string>
+    <string name="Machine">Machine</string>
+    <string name="EngineerName">Engineer Name</string>
+    <string name="customername">Customer Name</string>
+
+    <string name="WorkStatus">Work Status</string>
+    <string name="EnggWorkStatus">Eng. Work Status</string>
+    <string name="Description">Description</string>
+    <string name="RectificationDate">Rectification Date</string>
+    <string name="seprater">:</string>
+    <string name="Back">Back</string>
+    <string name="Home">Home</string>
+
+
+    <!-- Complain list activity -->
+    <string name="Status">Status :</string>
+    <string name="modelname">Model Name</string>
+    <string name="sign_by_e_mail_id">Sign By E-mail id</string>
+
+
+    <string name="powered_by_cfcs">Powered By CFCS</string>
+    <string name="raise_complaint">Raise Complaint</string>
+    <string name="problem_title">Problem Title</string>
+    <string name="problem_description">Problem Description</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="plant">Plant</string>
+    <string name="machine_modal">Machine Modal</string>
+    <string name="machine_sr_no">Machine Sr. No.</string>
+    <string name="complaint_type">Complaint Type</string>
+    <string name="off_site_on_site">Off Site / On Site</string>
+    <string name="problem_occurrence_date_time">Problem Occurrence Date/Time</string>
+    <string name="complaint_date_time">Complaint Date Time</string>
+    <string name="expected_time_of_completion">Expected Time of Completion</string>
+    <string name="existing_customer_contact">Existing Customer Contact</string>
+    <string name="new_person_name">New Person name</string>
+    <string name="mail_id">Mail ID</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="other_contact_no">Other Contact No.</string>
+    <string name="mail_sms">Mail / SMS</string>
+    <string name="work_status">Work Status</string>
+    <string name="status">Status</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="filters">Filters</string>
+    <string name="region">Region</string>
+    <string name="on_site_off_site">On Site /Off site</string>
+    <string name="customer">Customer</string>
+    <string name="model">Model</string>
+    <string name="site">Site</string>
+    <string name="machine">Machine</string>
+    <string name="complaint_date">Complaint Date</string>
+    <string name="complaint_no">Complaint No</string>
+
+
+    <string name="installation_region">Installation Region</string>
+
+
+    <string name="search_serial_no">Search Serial No</string>
+    <string name="responsibe_engg">Responsible Engg.</string>
+    <string name="approval_status">Approval Status</string>
+    <string name="s_no">S.No.</string>
+    <string name="serial_no">Serial No.</string>
+
+    <string name="principal_name">Principal Name</string>
+    <string name="plant_customer">Plant / Customer</string>
+
+    <string name="amc_warranty">AMC/Warranty</string>
+    <string name="warranty_date">Warranty Date</string>
+    <string name="amc_date">AMC date</string>
+    <string name="add_by">Add By</string>
+
+    <string name="approval_remark">Approval Remark</string>
+    <string name="machine_detail">Machine Detail</string>
+    <string name="principal">Principal</string>
+    <string name="product_model">Product Model</string>
+    <string name="product_sub_model">Product Sub Model</string>
+    <string name="s_w_version">S/W Version</string>
+    <string name="product_key">Product Key</string>
+    <string name="date_of_supply">Date of Supply</string>
+    <string name="date_of_installation">Date of Installation</string>
+    <string name="machine_status">Machine Status</string>
+    <string name="comments">Comments</string>
+    <string name="warranty_start_date">Warranty Start Date</string>
+    <string name="warranty_end_date">Warranty End Date</string>
+    <string name="amc_start_date">AMC Start Date</string>
+    <string name="amc_end_date">AMC End Date</string>
+    <string name="search_contact_name_mailid">Search (Contact Name, MailID)</string>
+    <string name="contact_person_name">Contact Person Name</string>
+    <string name="designation">Designation</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="name">Name</string>
+    <string name="login_user_name">Login User Name</string>
+    <string name="message_feedback"><![CDATA[Message & Feedback]]></string>
+    <string name="subject">Subject</string>
+    <string name="enter_your_subject">Enter Your Subject</string>
+    <string name="message">Message</string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="profile">Profile</string>
+    <string name="region_name">Region Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_no">Phone No</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_new_machine">Add New Machine</string>
+    <string name="installation_area">Installation Area</string>
+    <string name="machine_sub_modal">Machine Sub Modal</string>
+    <string name="office_file_no">Office File No.</string>
+    <string name="amc_file_no">AMC File No</string>
+    <string name="primary_responsibility">Primary Responsibility</string>
+    <string name="warranty_amc_status">Warranty/AMC Status</string>
+    <string name="choose_file">Choose File</string>
+    <string name="no_file_chosen">No File Chosen</string>
+    <string name="manage_contact">Manage Contact</string>
+    <string name="manage_complaints">Manage Complaints</string>
+    <string name="manage_machines">Manage Machines</string>
+    <string name="plant_customer_name">Plant / Customer Name</string>
+    <string name="service_type">Service Type</string>
+    <string name="problem_occurred_at">Problem Occurred At</string>
+    <string name="expected_completion_date">Expected Completion Date</string>
+    <string name="priority">Priority</string>
+    <string name="escalation_level">Escalation Level</string>
+    <string name="e_mail_id">E-mail id</string>
+    <string name="complain_log_by">Complain Log By</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="forgot_password">Forget Password</string>
+    <string name="user_name">User Name</string>
+    <string name="back">Back</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rationale_photo_picker">We require this permission to select photo from gallery and camera.</string>
+    <string name="rationale_doc_picker">We need this pemission to read documents from device.</string>
+</resources>

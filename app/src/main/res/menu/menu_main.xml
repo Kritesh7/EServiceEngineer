@@ -1,0 +1,75 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/dashboard"
+                android:icon="@drawable/ic_dashboard"
+                android:title="Dashboard"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_raise"
+                android:icon="@drawable/ic_raise_complain_menu"
+                android:title="Raise Request"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_complain"
+                android:icon="@drawable/ic_complaint_menu"
+                android:title="Manage Request"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_machines"
+                android:icon="@drawable/ic_manage_machine_menu"
+                android:title="Manage Machine"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_contact"
+                android:icon="@drawable/ic_manage_contact_menu"
+                android:title="Manage Contact"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_menu_service_hour"
+                android:icon="@drawable/ic_service_hours_black"
+                android:title="Service Hours"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/btn_menu_feedback"
+                android:icon="@drawable/ic_feedback_menu"
+                android:title="Feedback"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile"
+                app:showAsAction="never"></item>
+            <item
+                android:id="@+id/change_password"
+                android:icon="@drawable/ic_changepassword"
+                android:title="Change Password"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout_menu"
+                android:title="Logout"
+                app:showAsAction="never"></item>
+
+        </menu>
+    </item>
+
+
+</menu>

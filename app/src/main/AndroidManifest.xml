@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.co.cfcs.eserviceengineer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/e_services_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/e_service_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".activity_engineer.DashboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.RaiseComplaintActivity"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.FeedbackActivity"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ManageComplaint"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ManageMachines"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ManageContact"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.MachineDetail"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.NewContact"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ProfileUpdate"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ChangePassword"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.NewMachine"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ComplaintDetail"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.ForgetPasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.EngineerWorkStatusUpdate"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.SubmitEngWorkStatus"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme" />
+        <activity android:name=".activity_engineer.CustomGallery" />
+        <activity
+            android:name=".activity_engineer.DailyReport"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.AddDailyReport"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity_engineer.DailyReportDetail"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:theme="@style/InnerTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".broadcastReciever.CustomerBroadcastReciever" />
+
+        <service android:name=".broadcastReciever.AutoNofity"
+            android:process=":whatever"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="in.co.cfcs.eserviceengineer"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

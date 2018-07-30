@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/maincontainer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003399"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#396999"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/add_new_machine"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Heading End -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/traning_main_lay2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/card_view_machine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!--android:background="?attr/selectableItemBackground"-->
+
+                        <TextView
+                            android:id="@+id/tv_customer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/customer_name"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <in.co.cfcs.kriteshspinnerserachlib.SearchableSpinner
+                            android:id="@+id/spinner_customer_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_plant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/plant"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <in.co.cfcs.kriteshspinnerserachlib.SearchableSpinner
+                            android:id="@+id/spinner_plant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_installation_region"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/installation_region"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_installation_region"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_installation_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/installation_area"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_installation_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/principal"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_principal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_machine_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Machine Model"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_machine_model"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_machine_serial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/machine_sr_no"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_machine_serial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Serial No."
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/s_w_version"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_sw_version"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="@string/s_w_version"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/product_key"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_product_key"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="@string/product_key"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/office_file_no"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_office_file_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="@string/office_file_no"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/amc_file_no"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_amc_file_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="@string/amc_file_no"
+                            android:inputType="text"
+
+                            android:padding="10dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/date_of_supply"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_date_of_supply"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/ic_calender"
+                            android:editable="false"
+                            android:hint="@string/date_of_supply"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/date_of_installation"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/txt_date_install"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/ic_calender"
+                            android:editable="false"
+                            android:hint="@string/date_of_installation"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/primary_responsibility"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_primary_respon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Secondary Responsibility"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_secondary_respon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_warrantyAMC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/warranty_amc_status"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinner_warranty_amc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_back"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:popupBackground="#fff"
+                            android:spinnerMode="dropdown"
+
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:id="@+id/warranty_llout_hideShow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Warranty Start Date"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/txt_warranty_s_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_box_enable_disable"
+                                android:clickable="true"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/ic_calender"
+                                android:editable="false"
+                                android:hint="Warranty Start Date"
+                                android:padding="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Warranty End Date"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txt_warranty_e_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_box_enable_disable"
+                                android:clickable="true"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/ic_calender"
+                                android:editable="false"
+                                android:hint="Warranty End Date"
+                                android:padding="10dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/amc_llout_hideShow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="AMC Start Date "
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txt_amc_start_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_box_enable_disable"
+                                android:clickable="true"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/ic_calender"
+                                android:editable="false"
+                                android:hint="AMC Start Date"
+                                android:padding="10dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="AMC End Date "
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txt_amc_end_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_box_enable_disable"
+                                android:clickable="true"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/ic_calender"
+                                android:editable="false"
+                                android:hint="AMC End Date"
+                                android:padding="10dp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Comments"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txt_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_box_enable_disable"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Comments"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#999"
+                            android:textSize="15sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_update"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/mybutton"
+                                android:text="Update"
+                                android:textColor="@color/white" />
+
+                            <Button
+                                android:id="@+id/btn_submit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/mybutton"
+                                android:text="@string/submit"
+                                android:textColor="@color/white" />
+
+                            <Button
+                                android:id="@+id/btn_clear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/mybutton"
+                                android:text="@string/clear"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btnHomecomplainlist1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#396999"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/powered_by_cfcs"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

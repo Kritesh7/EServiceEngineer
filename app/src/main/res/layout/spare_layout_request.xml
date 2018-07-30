@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/complaintpopLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#396999"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Search Spare Part"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@drawable/ic_close"-->
+                <!--android:layout_weight=".9"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:id="@+id/imv_closed"/>-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_grey"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/txt_search_sparePart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".1"
+                    android:background="@drawable/edit_text_shape"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Search Spare Part"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".2"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="Serach" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView_sparePart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="beforeDescendants"
+                android:dividerHeight="1dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

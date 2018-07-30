@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:clickable="true"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Completed (20%)"
+                    android:textSize="10sp"
+                    android:textColor="#00ce07"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Open (80%)"
+                    android:textSize="10sp"
+                    android:textColor="#f90000"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/progress_drawable"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/request_status"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="1dp">
+
+                            <Button
+                                android:id="@+id/btn_raise_complain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#CC6600"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:text="Raise Request"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="33dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_raise_complain" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="2dp">
+
+                            <Button
+                                android:id="@+id/btn_manage_complain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#009999"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:singleLine="false"
+                                android:text="Manage Request"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginBottom="33dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_complaint" />
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="1dp">
+
+                            <Button
+                                android:id="@+id/btn_manage_machines"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#07774E"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:text="manage machines"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="33dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_manage_machine" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="2dp">
+
+                            <Button
+                                android:id="@+id/btn_manage_contact"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#999933"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:singleLine="false"
+                                android:text="manage contact"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="33dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_manage_contact" />
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="1dp">
+
+                            <Button
+                                android:id="@+id/btn_feedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#009DCC"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:text="Feedback"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="33dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_feedback" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="2dp">
+
+                            <Button
+                                android:id="@+id/btn_logout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#CC005E"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:text="Logout"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="33dp"
+                                android:layout_marginTop="0dp"
+                                android:elevation="2dp"
+                                android:padding="20dp"
+                                app:srcCompat="@drawable/ic_logout" />
+
+                        </RelativeLayout>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
